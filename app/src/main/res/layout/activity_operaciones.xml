@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Operaciones">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="@string/operaciones"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2.5"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/Numero1"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editnumero1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="@string/Numero2"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editnumero2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnsumar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sumar" />
+
+        <Button
+            android:id="@+id/btnrestar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Restar" />
+
+        <Button
+            android:id="@+id/btndividir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Dividir" />
+
+        <Button
+            android:id="@+id/btnmultiplicar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Multiplicar" />
+
+        <Button
+            android:id="@+id/btnmcd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Mcd" />
+
+        <Button
+            android:id="@+id/btnmcm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Mcm" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/escudo" />
+    </LinearLayout>
+</LinearLayout>

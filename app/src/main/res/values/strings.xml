@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Primer-Tarrer</string>
+    <string name="Usuario">Usuario</string>
+    <string name="Contraseña">Contraseña</string>
+    <string name="Bienvenido">Bienvenido</string>
+    <string name="sumar">Sumar</string>
+    <string name="Restar">Restar</string>
+    <string name="Multiplicar">Multiplicar</string>
+    <string name="Dividir">Dividir</string>
+    <string name="operaciones">Operaciones</string>
+    <string name="Numero1">Numero 1</string>
+    <string name="Numero2">Numero 2</string>
+    <string name="iniciar">Ingresar</string>
+    <string name="Cancelar">Cancelar</string>
+    <string name="Mcd">Mcd</string>
+    <string name="Mcm">Mcm</string>
+
 </resources>
