@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -25,11 +26,19 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(TextUtils.isEmpty(contraseña.getText()) || TextUtils.isEmpty(usuario.getText())){
-                    Toast.makeText(getApplicationContext(),"No puden haber campos vacios ", Toast.LENGTH_LONG).show();
+                    Toast toast = Toast.makeText(getApplicationContext(),"Los campos no puden estar vacios ", Toast.LENGTH_LONG);
+                    toast.setGravity(Gravity.CENTER,0,0);
+                    toast.show();
                 }else{
                     Intent i = new Intent(getApplicationContext(),Operaciones.class);
                     startActivity(i);
                 }
+            }
+        });
+        cancelar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
             }
         });
     }

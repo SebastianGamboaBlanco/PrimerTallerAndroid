@@ -3,6 +3,7 @@
     <string name="Usuario">Usuario</string>
     <string name="Contraseña">Contraseña</string>
     <string name="Bienvenido">Bienvenido</string>
+    <string name="Cerrar">Cerrar</string>
     <string name="sumar">Sumar</string>
     <string name="Restar">Restar</string>
     <string name="Multiplicar">Multiplicar</string>
