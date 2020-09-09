@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 public class Operaciones extends AppCompatActivity implements View.OnClickListener {
     EditText numero1, numero2;
-    Button sumar,restar,multiplicar,dividir,mcd,mcm;
+    Button sumar,restar,multiplicar,dividir,mcd,mcm,mayor;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,12 +26,14 @@ public class Operaciones extends AppCompatActivity implements View.OnClickListen
         dividir = findViewById(R.id.btndividir);
         mcd = findViewById(R.id.btnmcd);
         mcm = findViewById(R.id.btnmcm);
+        mayor = findViewById(R.id.btnmayor);
         sumar.setOnClickListener(this);
         restar.setOnClickListener(this);
         multiplicar.setOnClickListener(this);
         dividir.setOnClickListener(this);
         mcd.setOnClickListener(this);
         mcm.setOnClickListener(this);
+        mayor.setOnClickListener(this);
     }
 
     @Override
@@ -102,6 +104,18 @@ public class Operaciones extends AppCompatActivity implements View.OnClickListen
                 mc.setGravity(Gravity.CENTER, 0, 0);
                 mc.show();
                 break;
+            case R.id.btnmayor:
+                if (n1 > n2){
+                    Toast mayor = Toast.makeText(this, "Mayor = " + n1, Toast.LENGTH_LONG);
+                    mayor.setGravity(Gravity.CENTER, 0, 0);
+                    mayor.show();
+                    break;
+            }else{
+                    Toast mayor = Toast.makeText(this, "Mayor = " + n2, Toast.LENGTH_LONG);
+                    mayor.setGravity(Gravity.CENTER, 0, 0);
+                    mayor.show();
+                    break;
+                }
             }
         }
     }
